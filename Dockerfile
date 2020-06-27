@@ -22,5 +22,11 @@ WORKDIR /linux-on-litex-vexriscv
 
 RUN /usr/bin/python3 ./make.py --board=versa_ecp5 --build
 
+RUN apk --no-cache add --virtual sim-dependencies \
+    libevent-dev \
+    json-c-dev \
+    perl \
+    ccache
+
 CMD ["/usr/bin/python3", "./sim.py"]
 
