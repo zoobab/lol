@@ -22,5 +22,5 @@ WORKDIR /linux-on-litex-vexriscv
 
 RUN /usr/bin/python3 ./make.py --board=versa_ecp5 --build
 
-CMD ["/usr/bin/python3", "/sim.py"]
+CMD ["/usr/bin/python3", "./sim.py"]
 
