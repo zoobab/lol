@@ -7,7 +7,7 @@ FROM 0x01be/riscv-gnu-toolchain as riscv
 FROM 0x01be/litex
 
 COPY --from=yosys /opt/yosys/ /opt/yosys/
-COPY --from=prjtrellis /opt/prjtrelis/ /opt/prjtrellis/
+COPY --from=prjtrellis /opt/prjtrellis/ /opt/prjtrellis/
 COPY --from=nextpnr /opt/nextpnr/ /opt/nextpnr/
 COPY --from=riscv /opt/riscv/ /opt/riscv/
 COPY --from=verilator /opt/verilator/ /opt/verilator/
